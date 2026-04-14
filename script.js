@@ -69,3 +69,14 @@ function reset() {
   userSeq = [];
   level = 0;
 }
+
+
+
+let startBtn = document.getElementById("startBtn");
+
+startBtn.addEventListener("click", function () {
+  if (!started) {
+    started = true;
+    levelUp();
+  }
+});
